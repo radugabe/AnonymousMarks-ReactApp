@@ -1,0 +1,13 @@
+.dashboard {
+  padding: 20px;
+  text-align: center;
+  background-color: #4b0054;
+}
+
+.dashboard h1 {
+  color: #ffffff;
+}
+
+.dashboard-sections {
+  margin-top: 20px;
+}

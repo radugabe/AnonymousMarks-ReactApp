@@ -1,0 +1,129 @@
+/* Resetează marginile și padding-ul implicit, setează font-ul și culorile de bază */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4b0054;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box; /* Pentru calcule corecte la padding/border */
+}
+
+/* Container principal */
+.professor-dashboard {
+  width: 100vw; /* Ocupă toată lățimea ferestrei */
+  padding: 1vw;
+}
+
+/* Titlu principal */
+.professor-dashboard h2 {
+  margin-bottom: 2vw;
+  font-size: 1.5vw; /* Text mare */
+}
+
+/* Lista de proiecte */
+.professor-dashboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Scoatem margin, controlăm lățimea pe .project-item */
+}
+
+/* Fiecare proiect (bubble) */
+.project-item {
+  background-color: #fff;
+  color: #4b0054;
+  border-radius: 1vw;
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
+  padding: 2vw;
+  margin-bottom: 2vw;
+
+  /* Lățimea mai mică pe orizontală și centrare */
+  width: 60vw;
+  margin: 0 auto 2vw auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Informații proiect */
+.project-info {
+  font-size: 1.2vw;  
+  margin-bottom: 2vw;
+}
+
+/* Butoane proiect */
+.project-buttons {
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 2vw;
+}
+
+.project-buttons button {
+  background-color: #4b0054;
+  color: #fff;
+  border: none;
+  border-radius: 1vw;
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-buttons button:hover {
+  background-color: #37003e;
+}
+
+/* Detalii livrabile (bubble intern) */
+.project-details {
+  margin-top: 2vw;
+  background-color: #f3f3f3;
+  border-radius: 1vw;
+  padding: 2vw;
+}
+
+.project-details h4 {
+  margin-top: 0;
+  color: #4b0054;
+  font-size: 1.5vw;
+}
+
+.project-details ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-details li {
+  margin-bottom: 1vw;
+}
+
+/* Link-uri livrabile */
+.project-details a {
+  color: #4b0054;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+/* Secțiunea evaluărilor (note) */
+.project-evaluations {
+  margin-top: 2vw;
+  background-color: #f3f3f3;
+  border-radius: 1vw;
+  padding: 2vw;
+}
+
+.project-evaluations h4 {
+  margin-top: 0;
+  color: #4b0054;
+  font-size: 1.3vw;
+}
+
+.project-evaluations p {
+  margin: 0;
+  color: #4b0054;
+  font-size: 1vw;
+}

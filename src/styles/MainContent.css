@@ -1,0 +1,17 @@
+
+.main-content {
+    text-align: center;
+    margin: 20px;
+    background-color: #4b0054;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .main-content p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

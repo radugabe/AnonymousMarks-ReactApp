@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+
+/* Fundal general al paginii */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  font-size: 1vw; /* Scalarea textului general */
+}
+
+/* Fereastra modală */
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Efect de overlay */
+  overflow: hidden;
+  background-color: #4b0054;
+}
+
+/* Container pentru buline */
+.dots-container {
+  position: relative;
+  width: 20vw; /* Dimensiunea containerului pentru orbitare */
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buline animate */
+.dot {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 10s linear infinite, trail 0.5s linear infinite;
+  filter: blur(2px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Creează efectul de lumină */
+}
+
+/* Animație pentru urmă */
+@keyframes trail {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8),
+                0 0 30px rgba(255, 255, 255, 0.6),
+                0 0 45px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0),
+                0 0 15px rgba(255, 255, 255, 0),
+                0 0 25px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translateX(20vw) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(20vw) rotate(-360deg);
+  }
+}
+
+
+/* Culori și întârzieri diferite pentru fiecare bulină */
+.dot:nth-child(1) {
+  animation-delay: 0s, 0s;
+  background-color: #3a0f40;
+  animation-duration: 8s, 0.5s;
+}
+.dot:nth-child(2) {
+  animation-delay: 1s, 0.1s;
+  background-color: #3a0f40;
+  animation-duration: 9s, 0.5s;
+}
+.dot:nth-child(3) {
+  animation-delay: 2s, 0.2s;
+  background-color: #3a0f40;
+  animation-duration: 10s, 0.5s;
+}
+.dot:nth-child(4) {
+  animation-delay: 3s, 0.3s;
+  background-color: #3a0f40;
+  animation-duration: 11s, 0.5s;
+}
+.dot:nth-child(5) {
+  animation-delay: 4s, 0.4s;
+  background-color: #3a0f40;
+  animation-duration: 12s, 0.5s;
+}
+.dot:nth-child(6) {
+  animation-delay: 5s, 0.5s;
+  background-color: #3a0f40;
+  animation-duration: 13s, 0.5s;
+}
+.dot:nth-child(7) {
+  animation-delay: 6s, 0.6s;
+  background-color: #3a0f40;
+  animation-duration: 14s, 0.5s;
+}
+.dot:nth-child(8) {
+  animation-delay: 7s, 0.7s;
+  background-color: #3a0f40;
+  animation-duration: 15s, 0.5s;
+}
+
+
+/* Caseta de login */
+.login-form {
+  position: relative; /* Centrare în container */
+  background-color: #3a0f40; /* Mov mai deschis */
+  padding: 1vw; /* Dimensiune relativă a marginilor interioare */
+  border-radius: 1vw;
+  box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.5);
+  width: 80vw; /* Dimensiune relativă */
+  height: 25vw;
+  /*max-width: 400px; /* Limita superioară */
+  text-align: center;
+  z-index: 1; /* Să fie deasupra bulinelor */
+}
+
+/* Stilurile input-urilor */
+.login-form input {
+  display: block;
+  width: 90%;
+  margin: 1.5vw auto;
+  padding: 1vw;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: inset 0 0.2vw 0.5vw rgba(0, 0, 0, 0.2);
+}
+
+.login-form input:focus {
+  outline: none;
+  border: 0.2vw solid #8c00b8; /* Evidențiere la focus */
+}
+
+.login-form button {
+  padding: 1.2vw 2vw;
+  font-size: 1vw;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  background-color: #671481; /* Nuanță mai luminoasă */
+  color: #fff;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #a300d9; /* Nuanță mai luminoasă la hover */
+  transform: scale(1.05); /* Efect de mărire la hover */
+}
+
+.login-form button:active {
+  transform: scale(0.95); /* Efect de micșorare la click */
+}
+
+.login-form h2 {
+  margin-bottom: 1vw;
+  font-size: 2vw; /* Dimensiune scalabilă */
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+.csie-logo {
+  position: absolute;
+  top: 2vw; /* Distanța față de marginea de sus */
+  right: 3vw; /* Distanța față de marginea din dreapta */
+  width: 10vw; /* Ajustează dimensiunea logo-ului */
+  height: auto; /* Menține proporțiile */
+  z-index: 10; /* Asigură că logo-ul apare deasupra altor elemente */
+  filter: brightness(0.7); /* Ajustează valoarea (0.5-1) pentru diferite efecte */
+}
+
+.footer {
+  position: fixed; /* Fixat în partea de jos a paginii */
+  bottom: 10px; /* Margine jos */
+  left: 50%; /* Centrare orizontală */
+  transform: translateX(-50%); /* Ajustare pentru a fi centrat */
+  font-size: 0.7vw; /* Text mic */
+  color: #8b05b4bf; /* Text alb */
+  text-align: center;
+  z-index: 10;
+  padding: 5px 10px; /* Spațiere, opțional */
+  border-radius: 5px; /* Colțuri rotunjite, opțional */
+}
+
