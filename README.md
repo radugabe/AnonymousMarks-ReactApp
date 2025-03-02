@@ -123,11 +123,6 @@ npm start
 - **user_evaluators** - Asocierea dintre evaluatori și echipe (user_id, team_id)
 - **evaluations** - Notele acordate (id, team_id, user_id, mark, timestamp)
 
-## 👥 Echipa de dezvoltare
-- Radu Dinu
-- Vlad Anghel
-- Alicia Dobre
-
 ## 📜 Licență
 © Toate drepturile rezervate.
 
