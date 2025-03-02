@@ -81,7 +81,7 @@
 
 ### Pași de instalare
 1. Clonează repository-ul
-
+```bash
 git clone https://github.com/radugabe/AnonymousMarks-ReactApp.git
 cd anonymous-marks
 ```
