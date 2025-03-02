@@ -81,13 +81,13 @@
 
 ### Pași de instalare
 1. Clonează repository-ul
-
-git clone https://github.com/radugabe/AnonymousMarks-ReactApp.git
+```bash
+git clone https://github.com/radugabe/AnonymousMarks-ReactApps.git
 cd anonymous-marks
 ```
 
 2. Instalează dependențele pentru frontend
-
+```bash
 cd client
 npm install
 ```
@@ -103,7 +103,7 @@ npm install
 - Actualizează credențialele în fișierul `server/config/db.js`
 
 5. Rulează aplicația
-
+```bash
 # Terminal 1 - Backend
 cd server
 npm start
@@ -122,6 +122,11 @@ npm start
 - **deliverables** - Livrabilele încărcate (deliverable, sent_user_id)
 - **user_evaluators** - Asocierea dintre evaluatori și echipe (user_id, team_id)
 - **evaluations** - Notele acordate (id, team_id, user_id, mark, timestamp)
+
+## 👥 Echipa de dezvoltare
+- Radu Dinu
+- Vlad Anghel
+- Alicia Dobre
 
 ## 📜 Licență
 © Toate drepturile rezervate.
