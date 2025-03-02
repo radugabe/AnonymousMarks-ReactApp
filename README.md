@@ -81,13 +81,13 @@
 
 ### Pași de instalare
 1. Clonează repository-ul
-```bash
-git clone https://github.com/username/anonymous-marks.git
+
+git clone https://github.com/radugabe/AnonymousMarks-ReactApp.git
 cd anonymous-marks
 ```
 
 2. Instalează dependențele pentru frontend
-```bash
+
 cd client
 npm install
 ```
